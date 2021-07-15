@@ -1,0 +1,125 @@
+body {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    159deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.movie {
+  background-image: linear-gradient(135deg, #7367f0 100%, #ce9ffc 10%);
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  width: 250px;
+  margin: 1rem;
+}
+
+.movie img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.movie-info h4 {
+  margin: 0;
+}
+
+.movie-over {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: absolute;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #22254b;
+  padding: 1rem;
+  transform: translateX(102%);
+  overflow: auto;
+  max-height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .movie-over {
+  transform: translateX(0);
+}
+
+header {
+  background-image: linear-gradient(135deg, #7367f0 100%, #ce9ffc 10%);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h3 {
+  margin-left: 25px;
+  color: #000;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.tag {
+  background-color: #22254b;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.tag.green {
+  color: rgb(23, 163, 23);
+}
+.tag.orange {
+  color: rgb(201, 26, 14);
+}
+.tag.red {
+  color: rgb(204, 39, 39);
+}
+.hr {
+  background-color: #000;
+}
+.footer {
+  text-align: center;
+  color: #000;
+}
